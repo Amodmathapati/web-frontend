@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        hii
+    </title>
+    <style>
+
+        /* container is main div and it contains "childs" which 
+        are called as flex items.*/
+     .container{
+
+        background-color: #cacaca;
+        height:150px;
+        margin:15px;
+        padding: 10px;
+        display: flex;
+        flex-direction:row;
+        justify-content:space-evenly;
+        align-items:center;
+        /* //justify-content and align-items are used to 
+        move flex items left/right/middle/space between them 
+        and top/down/center respectively.with these  two
+        flex items can be shown at any corner in the flexbox.*/
+
+
+     }
+
+     .item{
+      background-color: rgb(47, 47, 163);
+      font-size: 20px;
+      font-weight:lighter;
+      padding:3px;
+      padding-right:15px ;
+      padding-left:15px ;
+      margin:10px;
+      
+      /* display: inline-block; */
+     }
+
+
+     .item5{
+        /* height:75px; */
+        /* align-self: center; */
+        /* font-size: 40px; */
+        flex-grow: 2;
+        flex-shrink: 1;
+     }
+
+     .item3{
+        align-self:center;
+     }
+     
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+      <div class="item1 item">1</div> 
+      <div class="item2 item">2</div>
+      <div class="item3 item">3</div>
+      <div class="item4 item">4</div>
+      <div class="item5 item">5</div>
+      <!-- "item" is common selector here -->
+    </div>
+
+
+
+</body>
+
+
+
+
+
+
+</html>

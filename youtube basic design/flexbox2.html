@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<htnl>
+    <head>
+        <title>
+            flexbox2
+        </title>
+
+        <style>
+            .yt{
+
+                height: 40px;
+                width: 150px;
+                margin-left: 20px;
+            }
+             .menu{
+                height:30px;
+                width:30px;
+                margin-left: 20px;
+
+
+             }
+            .main{
+
+              display:flex;
+              flex-direction: row;
+              border-width: 2px;
+              margin-top: 30px;
+              margin-left: 10px;
+              margin-right:10px ;
+              border-style: solid;
+              border-color: #cacaba;
+              height: 50px;
+              /* padding:10px; */
+              justify-content:space-between;
+              position: fixed;
+                         
+            }
+            .left{
+
+                /* background-color:; */
+                width: 250px;
+                display: flex;
+                /* justify-content:start; */
+                align-items: center;
+            }
+
+            .middle{
+                /* background-color: #cacaca; */
+                max-width:700px;
+                flex:1;
+                margin-left: 70px;
+                margin-right:35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+            }
+
+            .right{
+
+                background-color: hotpink;
+                width:250px;
+            }
+
+            .search{
+
+              width:500px;
+              flex:1;
+              height:30px;
+              padding-left:12px;
+              border-color:#cacaca;
+              border-style: solid;
+              box-shadow:inset 1px 2px 3px rgba(0,0,0,0.05);
+            }
+            
+
+            .search::placeholder{
+                font-size:16px;
+
+            }
+
+            .search-image{
+                height:25px;
+                width:25px;
+
+            }
+
+          
+
+            .search-button{
+                position:relative;
+
+                height:35px;
+                position: relative;
+                width:40px;
+            }
+
+            search-button:hover .tooltip{
+             
+                opacity: 1;
+            }
+
+            .tooltip{
+                position:absolute;
+                background-color: grey;
+                top:40px;
+                left:-6px;
+                font-family: Arial, Helvetica, sans-serif;
+                color:whitesmoke;
+                padding-left: 2px;
+                padding-right:2px;
+                opacity:0;
+
+            }
+
+           
+
+            .microphone-icon{
+              height:25px;
+              width:25px;
+              margin-top: 4px;
+              border-radius: 30px;
+              border-color:#cacaca;
+
+            }
+
+            .microphone-button{
+                border-radius:20px;
+                border-color:transparent;
+                margin-left:2px;
+                position:relative;
+            }
+
+            .microphone-button:hover{
+                background-color: #cacaca;
+            }
+
+            
+
+        
+
+
+        </style>
+    </head>
+    <body style="height:3000px;">
+
+         <div class="main">
+             <div class="left">
+            <img class="menu" src="imgs/menu-icon-png-3-lines-11552729004xrpivp1smd.png">
+             <img class="yt" src="imgs/yt.png">
+
+              </div>
+
+             <div class="middle">
+              <input class="search" type="text" placeholder="search">
+              <div class="search-div">
+                <button class="search-button">
+                    <img class="search-image" src="imgs/kisspng-computer-icons-desktop-wallpaper-search-box-materi-verification-5b2e87fc14d6f0.2412637115297761240854.png">
+                    <div class="tooltip">
+                        search
+                    </div>
+                </button>
+                
+
+              </div>
+              
+               <!-- <div class="tooltip">
+                search
+               </div> -->
+
+               
+
+              <button class="microphone-button">
+                <img class="microphone-icon" src="imgs/png-transparent-microphone-illustration-microphone-google-now-computer-icons-google-voice-search-mic-electronics-audio-equipment-audio.png">
+              </button>
+             </div>
+
+             <div class="right">
+             right
+
+              </div>
+
+
+     </div>
+
+    </body>
+</htnl>
